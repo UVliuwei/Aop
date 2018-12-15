@@ -25,7 +25,8 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 @Component
 public class ServiceAspect {
 
-    @Pointcut("execution(public * com.uv.aop.service.*.*(..))")
+//    @Pointcut("execution(public * com.uv.aop.service.*.*(..))")
+    @Pointcut("@annotation(com.uv.aop.config.PrintTime)")
     public void serviceCut() {
     }
 

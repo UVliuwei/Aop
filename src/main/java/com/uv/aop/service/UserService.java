@@ -1,5 +1,6 @@
 package com.uv.aop.service;
 
+import com.uv.aop.config.PrintTime;
 import org.springframework.stereotype.Service;
 
 /*
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
+    @PrintTime
     public String getName(String id) {
         return "Tom";
     }
